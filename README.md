@@ -20,7 +20,7 @@ This Python script allows users to extract image prompts from the downloaded HTM
 1. **Download ExifTool**:
    Download and install ExifTool from [https://exiftool.org/](https://exiftool.org/).
 
-2. **Download kindroid_metadata_tool.py** from this repository
+2. **Download `kindroid_metadata_tool.py`** from this repository
 
 3. **Install Dependencies**
    ```bash

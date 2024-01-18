@@ -13,6 +13,10 @@ This Python script allows users to extract image prompts from the downloaded HTM
 
 ## Setup
 
+1. **Install Python:**
+   - Ensure Python 3.x is installed on your machine. If not, download and install Python from https://www.python.org/downloads/.
+   - During installation, make sure to check the option that adds Python to your system's PATH.
+
 1. **Download ExifTool**:
    Download and install ExifTool from [https://exiftool.org/](https://exiftool.org/).
 
@@ -23,3 +27,24 @@ This Python script allows users to extract image prompts from the downloaded HTM
    ```bash
    pip install beautifulsoup4
    ```
+## Usage
+
+1 . **Generate HTML Page with Kindroid**
+   - Open Kindroid AI image generation tool in your web browser.
+   - Scroll down to load all the images you'd like to download.
+   - Right-click on the page and select "Save Page As."
+   - Save the HTML file to a folder on your local machine. The default filename should be "Kindroid - Your Personal Artificial Intelligence Companion.html."
+   - Ensure the complete webpage, including images, is saved by selecting the appropriate option in the save dialog.
+2. **Run the script**
+   - Place kindroid_metadata_tool.py in the same directory.
+   - Ensure exiftool is available in the PATH, or place it in the same folder.
+   - Run the command:
+     ```bash
+     python kindroid_metadata_tool.py
+     ```
+3. **View Results**
+   - The `output` directory will contain all the images with the prompts injected in the JPEG files.
+   - Load these images into your favorite image cataloging program. I use DigiCam.
+
+
+   

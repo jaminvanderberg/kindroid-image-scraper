@@ -4,7 +4,7 @@
 
 Kindroid, a popular AI image generation tool, lacks a mass download feature. However, users can leverage their browser's download capability to save all generated pictures to a folder. Unfortunately, this results in a collection of images without proper organization. The Kindroid Image Scraping and Metadata Tool is designed to address this limitation.
 
-This Python script allows users to extract image prompts from the downloaded HTML file and inject them into the corresponding JPEG files. By doing so, you can seamlessly integrate the prompts with the images themselves. This enables compatibility with various image cataloging tools such as Lightroom, Digikam, etc. The image prompts are stored directly in the JPEG metadata, making them visible in the cataloging software and providing an organized way to manage and explore your Kindroid-generated images.
+This Python script allows users to extract image prompts from the downloaded HTML file and inject them into the corresponding JPEG files. By doing so, you can seamlessly integrate the prompts with the images themselves. This enables compatibility with various image cataloging tools such as Lightroom, DigiKam, etc. The image prompts are stored directly in the JPEG metadata, making them visible in the cataloging software and providing an organized way to manage and explore your Kindroid-generated images.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ This Python script allows users to extract image prompts from the downloaded HTM
     
 ### 3. **View Results**
    - The `output` directory will contain all the images with the prompts injected in the JPEG files.
-   - Load these images into your favorite image cataloging program. I use DigiCam.
+   - Load these images into your favorite image cataloging program. I use DigiKam.
 
 
    

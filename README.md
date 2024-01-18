@@ -35,6 +35,7 @@ This Python script allows users to extract image prompts from the downloaded HTM
    - Right-click on the page and select "Save Page As."
    - Save the HTML file to a folder on your local machine. The default filename should be "Kindroid - Your Personal Artificial Intelligence Companion.html."
    - Ensure the complete webpage, including images, is saved by selecting the appropriate option in the save dialog.
+     
 2. **Run the script**
    - Place kindroid_metadata_tool.py in the same directory.
    - Ensure exiftool is available in the PATH, or place it in the same folder.
@@ -42,6 +43,7 @@ This Python script allows users to extract image prompts from the downloaded HTM
      ```bash
      python kindroid_metadata_tool.py
      ```
+     
 3. **View Results**
    - The `output` directory will contain all the images with the prompts injected in the JPEG files.
    - Load these images into your favorite image cataloging program. I use DigiCam.

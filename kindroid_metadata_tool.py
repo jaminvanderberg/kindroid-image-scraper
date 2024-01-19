@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import os
 import shutil
 import subprocess
+import datetime
 
 def scrape_prompts_from_html(html_file_path):
     prompts = []
@@ -21,6 +22,9 @@ def copy_and_set_prompts(prompts, source_directory, output_directory):
     total_files = len(prompts)
     processed_count = 0
 
+    # Sort files based on modified date in reverse order
+    prompts.sort(key=lambda x: os.path.getmtime(os.path.join(source_directory, x['filename'])), reverse=True)
+
     for prompt_info in prompts:
         filename = prompt_info['filename']
         prompt = prompt_info['prompt']
@@ -36,6 +40,9 @@ def copy_and_set_prompts(prompts, source_directory, output_directory):
             # Run exiftool command to set description metadata without creating backup files
             command = ['exiftool', '-P', '-overwrite_original', '-Description=' + prompt, output_path]
             subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+            # Update the modified date and created date using os.utime
+            os.utime(output_path)
 
             processed_count += 1
 
